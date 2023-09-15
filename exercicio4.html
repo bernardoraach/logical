@@ -1,0 +1,62 @@
+<!-- Haverá uma lista com quatro produtos que uma lanchonete vende, o usuário
+precisa informar o código do produto, em seguida o valor pago por ele. Nosso
+sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
+cliente informe um pagamento inferior ao valor do pedido. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let codigo = prompt("Digite o código do item desejado: ")
+        let valor = parseInt(prompt("Digite o valor a ser pago: "))
+
+        if (codigo === '1') {
+        const valorDoProduto = 12
+            if (valor >= valorDoProduto) {
+                document.write(`Seu troco é de R$${valor - valorDoProduto}`)
+            }
+            else{
+                alert("Você inseriu um valor inferior ao valor do produto")
+
+            }
+            
+        }
+        
+        if (codigo === '2') {
+        const valorDoProduto = 4
+            if (valor >= valorDoProduto) {
+                document.write(`Seu troco é de R$${valor - valorDoProduto}`)
+            }
+            else{
+                alert("Você inseriu um valor inferior ao valor do produto")
+
+            }
+            
+        }
+    
+        
+        if (codigo === '3') {
+        const valorDoProduto = 16
+            if (valor >= valorDoProduto) {
+                document.write(`Seu troco é de R$${valor - valorDoProduto}`)
+            }
+            else{
+                alert("Você inseriu um valor inferior ao valor do produto")
+
+            }
+            
+        }
+        
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

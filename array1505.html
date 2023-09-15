@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        const names = ['Marcos', 'João', 'Matheus', 'Bernardo', 'Juliana'];
+
+        //names.push('Julio') //add mais um no final
+
+        //names[0] = 'Kleber' // altera o dado de uma posição chamada
+
+        //names.splice(2, 1) // removendo Matheus - remover um númer
+                           //  o primeiro número informa a posição que quer ser excluído
+                           // o segundo informa a partir do primeiro valor quantos serão deletados
+                           // nesse exemplo, irá a partir do Matheus, excluir apenas o Matheus
+
+        names.length  // retorna o tamanho do meu array
+
+        for(let index = 0 ; index < names.length; index++) {
+            document.write(`${index} - ${names[index]}<br>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

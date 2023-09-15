@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array exercício B - 15/05</title>
+    <script>
+// Crie um laço que peça nomes, poderão ser armazenados vários nomes, 
+// não há uma
+// quantidade mínima nem máxima. Quando informada a palavra sair, 
+// exiba todos os
+// nomes e informe a quantidade de nomes cadastrados.
+       
+        let name
+        let names = []
+
+        do {
+             name = prompt('Digite nomes, e para encerrar digite sair')
+             name !== "sair" && names.push(name)
+             
+        } while (name != "sair")
+
+         
+        for (let index = 0; index < names.length; index++) {
+            document.write(`${names[index]}<br>`)
+            
+        } 
+
+        document.write(names.length)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

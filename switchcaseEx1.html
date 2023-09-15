@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const temp = parseInt(prompt("Digite uma temperatura"))
+        const tipoTemp = prompt("Digite o tipo de conversão \n1 - F-C \n2 - C-F")
+
+    switch(tipoTemp){
+        case "1":
+            const calculo1 = (tipoTemp - 32) / 1.8
+        document.write(`Farenheit -> Celsius = Sua temperatura em Celsius é de: ${calculo1}`)
+        break
+
+        
+        case "2":
+            const calculo2 = (tipoTemp * 1.8) + 32
+        document.write(`Celsius -> Farenheit = Sua temperatura em Celsius é de: ${calculo2}`)
+        break
+        
+        default:
+        document.write(`Conversão não encontrada`)
+
+    }    
+
+//     a) O usuário informa uma temperatura, em seguida poderá selecionar o tipo de
+// conversão (Celsius e Fahrenheit).
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

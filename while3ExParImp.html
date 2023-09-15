@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        let numeroInicial = parseInt(prompt("Digite o número inicial:"));
+        let numeroFinal = parseInt(prompt("Digite o número final:"));
+
+
+        let quantidadePares = 0;
+        let quantidadeImpares = 0;
+
+
+        
+        for (let i = numeroInicial; i <= numeroFinal; i++) {
+            if (i % 2 === 0) {
+                document.write(`<br>${i}`)            
+            quantidadePares++;
+            
+    }   else {
+            quantidadeImpares++;
+  }
+
+}
+document.write("Quantidade de números pares: " + quantidadePares);
+document.write("<br> Quantidade de números ímpares: " + quantidadeImpares);       
+
+//         O usuário informa um número inicial e um número final, em seguida retorne a
+// quantidade de pares e ímpares daquela cadeia de valores.
+// Vamos supor que os números informados foram: 6 e 12, sendo assim serão 4
+// pares (6, 8, 10 e 12) e 3 ímpares (7, 9 e 11).
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

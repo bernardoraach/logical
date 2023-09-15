@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const valor = parseInt(prompt("Digite um valor monetário"))
+        const moeda = prompt("Digite o tipo de moeda")
+
+    switch(moeda){
+        case "dólar":
+            let calculo1 = valor / 5
+        document.write(`Real -> Dólar = Seus reais em dólares equivalem a: ${calculo1}`)
+        break
+
+        case "euro":
+            let calculo2 = valor / 5.53
+        document.write(`Real -> Euro = Seus reais em euros equivalem a: ${calculo2}`)
+        break
+
+        case "realdolar":
+            let calculo3 = 5 * valor
+        document.write(`Dólar -> Real = Seus dólares em reais equivalem a: ${calculo3}`)
+        break
+
+        case "realeuro":
+         const calculo4 = 5.53 * valor
+        document.write(`Euro -> Real = Seus euros em reais equivalem a: ${calculo4}`)
+        break
+        
+        default:
+        document.write(`Moeda não encontrada`)
+
+    }    
+
+//     b) Crie um conversor de moedas. Será informado o valor e as conversões:
+// ○ Real para Dólar
+// ○ Dólar para Real
+// ○ Real para Euro
+// ○ Euro para Real
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

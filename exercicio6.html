@@ -1,0 +1,32 @@
+<!-- Peça para o usuário informar três números, em seguida exiba o menor deles. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const direito = parseInt(prompt("Digite a largura do lado direito de um triângulo"))
+        const esquerdo = parseInt(prompt("Digite a largura do lado esquerdo de um triângulo"))
+        const inferior = parseInt(prompt("Digite a largura do lado inferior de um triângulo"))
+        
+        if (direito === esquerdo && direito === inferior) {
+            document.write("Seu triângulo é um triângulo Equilátero")
+        }   else if (direito != esquerdo && esquerdo!=inferior && direito != inferior) {
+            document.write('Seu triângulo é um triângulo Escaleno')
+        }
+            else {
+                document.write('Seu triângulo é um triângulo Isósceles')
+            }
+            
+                   
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

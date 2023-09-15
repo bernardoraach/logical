@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+    let candidato = 0
+    let candidatoa = 0
+    let candidatob = 0
+    let candidatoc = 0
+        
+    do{
+        candidato = prompt("Digite o número do seu candidato:\na - Candidato A\nb- Candidato B\nc - Candidato C")
+
+    switch(candidato){
+        case "a":
+            candidatoa++
+        break
+
+        case "b":            
+            candidatob++
+        break
+
+        case "c":
+            candidatoc++
+        break
+    }
+    } while(candidato != "encerrar")
+    
+    document.write(`Candidato A: ${candidatoa}<br>Candidato B: ${candidatob}<br>Candidato C: ${candidatoc}`)
+
+//     Crie um sistema de votação para três candidatos. O eleitor poderá selecionar
+// um dos três nomes, em seguida será contabilizado o voto para o candidato.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

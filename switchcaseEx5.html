@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        const horario = parseInt(prompt("Digite apenas a hora (sem minutos) atual de Brasília"))
+        const local = prompt("Digite uma das opções abaixo para saber o horário comparando com Brasília: \n1 - New York \n2 - London\n3 - Tokyo ")
+
+    switch(local){
+        case "1":
+            const hora = horario - 1
+        document.write(`O horário de New York atual é ${hora}`)
+        break
+
+        case "2":
+            const hora2 = horario + 4 
+        document.write(`O horário de Londres atual é ${hora2}`)
+        break
+
+        case "3":
+            const hora3 = horario + 12
+        document.write(`O horário de Tokyo atual é ${hora2}`)
+        break
+
+        default:
+        document.write(`Favor digitar somente horas, sem minutos `)
+
+    }
+    
+    
+    
+
+//     Crie um sistema de votação para três candidatos. O eleitor poderá selecionar
+// um dos três nomes, em seguida será contabilizado o voto para o candidato.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

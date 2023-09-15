@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array exercício f - 15/05</title>
+    <script>
+        // Haverá um cardápio contendo dez itens (você define o nome e o valor de cada item),
+        // cada item terá um código de 1 a 10, além do número 11 que finaliza o sistema.
+        // Enquanto não for digitado o número 11 será contabilizado em uma lista, quando
+        // digitado o número 11 exiba os produtos adquiridos e o total dessa compra.
+        const meny = [] //cria-se essa const para criar um array
+        let contoption1 = 0 //soma para os números que forem digitados
+        let contoption2 = 0 //soma para os números que forem digitados
+        let contoption3 = 0 //soma para os números que forem digitados
+        let contoption4 = 0 //soma para os números que forem digitados
+        let contoption5 = 0 //soma para os números que forem digitados
+        let contoption6 = 0 //soma para os números que forem digitados
+        let contoption7 = 0 //soma para os números que forem digitados
+        let contoption8 = 0 //soma para os números que forem digitados
+        let contoption9 = 0 //soma para os números que forem digitados
+        let contoption10 = 0 //soma para os números que forem digitados
+
+        do {
+            const food = parseInt(prompt('Digite os produtos desejados:\n1 - Pizza - R$5,00\n2 - Hamburguer - R$10,00\n3 - Pastel - R$4,00\n4 - Refrigerante - R$5,00\n5 - Água - R$2,00\n6 - Batata Frita - R$8,00\n7 - Onion Rings - R$8,00\n8 - Sorvete - R$8,00\n9 - Cerveja - R$10,00\n10 - Suco Natural - R$6,00\n11 - Sair do cardápio'))
+            meny.push(num)
+        } while (meny.length > 1);
+
+        for (let index = 0; index < meny.length; index++) {
+            document.write(`${meny[index]}<br>`)
+
+            if (numeros[index] === 10) {
+                contDez += 1
+            }
+        }
+        document.write(`${contDez}`)
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

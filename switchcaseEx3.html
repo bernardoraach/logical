@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const produto = prompt("Digite um dos seguintes produtos (casaco, celular ou pizza):")
+        const valor = parseInt(prompt("Digite o valor do produto:"))
+        const segmento = prompt("Digite o segmento:\n1 - roupa\n2 -x' eletrônico\n3 - alimento")
+
+    switch(segmento){
+        case "1":
+            const desconto1 = valor * 0.05
+        document.write(`Você recebeu um desconto de R$${desconto1}`)
+        break
+
+        case "2":
+            const desconto2 = valor * 0.08
+        document.write(`Você recebeu um desconto de R$${desconto2}`)
+        break
+
+        case "3":
+            const desconto3 = valor * 0.1
+        document.write(`Você recebeu um desconto de R$${desconto3}`)
+        break
+
+        default:
+        document.write(`Segmento não encontrado`)
+
+    } 
+
+//     O usuário informa o nome de um produto, valor e segmento (vestuário,
+// eletrônico ou alimentício). Se o segmento for vestuário será dado 5% de
+// desconto sobre o valor do produto, caso eletrônico 8% e alimentício 10%.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

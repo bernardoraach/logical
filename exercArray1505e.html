@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array exercício e - 15/05</title>
+    <script>
+        // Faça com que sejam pedidos e armazenados cinco números. Informe quantos
+        // números dez foram informados pelo usuário.
+
+        const numeros = [] //cria-se essa const para criar um array
+        let contDez = 0 //soma para os números que forem digitados
+
+        do {
+            const num = parseInt(prompt('Digite 5 números'))
+            numeros.push(num)
+        } while (numeros.length < 5);
+
+        for (let index = 0; index < numeros.length; index++) {
+            document.write(`${numeros[index]}<br>`)
+
+            if (numeros[index] === 10) {
+                contDez += 1
+            }
+        }
+        document.write(`${contDez}`)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
